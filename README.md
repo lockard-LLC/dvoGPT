@@ -1,5 +1,5 @@
-# AutoGPT: Build, Deploy, and Run AI Agents
-
+# dvoGPT: Build, Deploy, and Run Autonomous Support Agents  
+[![Repo](https://img.shields.io/badge/repo-lockard--LLC/dvoGPT-blue)](https://github.com/lockard-LLC/dvoGPT.git)  
 [![Discord Follow](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscord.com%2Fapi%2Finvites%2Fautogpt%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&label=total%20members&logo=discord&logoColor=white&color=7289da)](https://discord.gg/autogpt) &ensp;
 [![Twitter Follow](https://img.shields.io/twitter/follow/Auto_GPT?style=social)](https://twitter.com/Auto_GPT) &ensp;
 
@@ -13,226 +13,223 @@
 [Русский](https://zdoc.app/ru/Significant-Gravitas/AutoGPT) | 
 [中文](https://zdoc.app/zh/Significant-Gravitas/AutoGPT)
 
-**AutoGPT** is a powerful platform that allows you to create, deploy, and manage continuous AI agents that automate complex workflows. 
+---
 
-## Hosting Options 
-   - Download to self-host (Free!)
-   - [Join the Waitlist](https://bit.ly/3ZDijAI) for the cloud-hosted beta (Closed Beta - Public release Coming Soon!)
+## What is dvoGPT?
 
-## How to Self-Host the AutoGPT Platform
-> [!NOTE]
-> Setting up and hosting the AutoGPT Platform yourself is a technical process. 
-> If you'd rather something that just works, we recommend [joining the waitlist](https://bit.ly/3ZDijAI) for the cloud-hosted beta.
+**dvoGPT** is an AutoGPT fork and a trauma-informed, privacy-first autonomous agent platform built to help survivors of domestic violence (DVO/EPO holders) with the practical, safety-critical tasks involved in leaving and rebuilding life. dvoGPT combines multi-agent automation with a survivor-centered UX and strict privacy rules so people can safely search for housing, track court dates, monitor offender custody (VINELink), arrange veterinary care through **SafePaws**, apply for benefits, plan moves, and coordinate transportation — all while minimizing the risk of discovery.
 
-### System Requirements
-
-Before proceeding with the installation, ensure your system meets the following requirements:
-
-#### Hardware Requirements
-- CPU: 4+ cores recommended
-- RAM: Minimum 8GB, 16GB recommended
-- Storage: At least 10GB of free space
-
-#### Software Requirements
-- Operating Systems:
-  - Linux (Ubuntu 20.04 or newer recommended)
-  - macOS (10.15 or newer)
-  - Windows 10/11 with WSL2
-- Required Software (with minimum versions):
-  - Docker Engine (20.10.0 or newer)
-  - Docker Compose (2.0.0 or newer)
-  - Git (2.30 or newer)
-  - Node.js (16.x or newer)
-  - npm (8.x or newer)
-  - VSCode (1.60 or newer) or any modern code editor
-
-#### Network Requirements
-- Stable internet connection
-- Access to required ports (will be configured in Docker)
-- Ability to make outbound HTTPS connections
-
-### Updated Setup Instructions:
-We've moved to a fully maintained and regularly updated documentation site.
-
-👉 [Follow the official self-hosting guide here](https://docs.agpt.co/platform/getting-started/)
-
-
-This tutorial assumes you have Docker, VSCode, git and npm installed.
+> **Short:** Autonomous, discreet, trauma-aware assistance — helping survivors plan safer next steps, one secure task at a time.
 
 ---
 
-#### ⚡ Quick Setup with One-Line Script (Recommended for Local Hosting)
+## Hosting Options
+- **Self-host (Free)** — run locally or in your own cloud with Docker Compose.  
+- **Managed / Cloud** — future plan: a hosted version with enhanced operational support (waitlist / beta when available).
 
-Skip the manual steps and get started in minutes using our automatic setup script.
-
-For macOS/Linux:
-```
-curl -fsSL https://setup.agpt.co/install.sh -o install.sh && bash install.sh
-```
-
-For Windows (PowerShell):
-```
-powershell -c "iwr https://setup.agpt.co/install.bat -o install.bat; ./install.bat"
-```
-
-This will install dependencies, configure Docker, and launch your local instance — all in one go.
-
-### 🧱 AutoGPT Frontend
-
-The AutoGPT frontend is where users interact with our powerful AI automation platform. It offers multiple ways to engage with and leverage our AI agents. This is the interface where you'll bring your AI automation ideas to life:
-
-   **Agent Builder:** For those who want to customize, our intuitive, low-code interface allows you to design and configure your own AI agents. 
-   
-   **Workflow Management:** Build, modify, and optimize your automation workflows with ease. You build your agent by connecting blocks, where each block     performs a single action.
-   
-   **Deployment Controls:** Manage the lifecycle of your agents, from testing to production.
-   
-   **Ready-to-Use Agents:** Don't want to build? Simply select from our library of pre-configured agents and put them to work immediately.
-   
-   **Agent Interaction:** Whether you've built your own or are using pre-configured agents, easily run and interact with them through our user-friendly      interface.
-
-   **Monitoring and Analytics:** Keep track of your agents' performance and gain insights to continually improve your automation processes.
-
-[Read this guide](https://docs.agpt.co/platform/new_blocks/) to learn how to build your own custom blocks.
-
-### 💽 AutoGPT Server
-
-The AutoGPT Server is the powerhouse of our platform This is where your agents run. Once deployed, agents can be triggered by external sources and can operate continuously. It contains all the essential components that make AutoGPT run smoothly.
-
-   **Source Code:** The core logic that drives our agents and automation processes.
-   
-   **Infrastructure:** Robust systems that ensure reliable and scalable performance.
-   
-   **Marketplace:** A comprehensive marketplace where you can find and deploy a wide range of pre-built agents.
-
-### 🐙 Example Agents
-
-Here are two examples of what you can do with AutoGPT:
-
-1. **Generate Viral Videos from Trending Topics**
-   - This agent reads topics on Reddit.
-   - It identifies trending topics.
-   - It then automatically creates a short-form video based on the content. 
-
-2. **Identify Top Quotes from Videos for Social Media**
-   - This agent subscribes to your YouTube channel.
-   - When you post a new video, it transcribes it.
-   - It uses AI to identify the most impactful quotes to generate a summary.
-   - Then, it writes a post to automatically publish to your social media. 
-
-These examples show just a glimpse of what you can achieve with AutoGPT! You can create customized workflows to build agents for any use case.
+> **NOTE:** Running the platform for real-world users requires legal review, security audits, and partnerships with advocacy organizations. See *Security, privacy & safety* below.
 
 ---
 
-### **License Overview:**
+## Why an AutoGPT fork?
 
-🛡️ **Polyform Shield License:**
-All code and content within the `autogpt_platform` folder is licensed under the Polyform Shield License. This new project is our in-developlemt platform for building, deploying and managing agents.</br>_[Read more about this effort](https://agpt.co/blog/introducing-the-autogpt-platform)_
-
-🦉 **MIT License:**
-All other portions of the AutoGPT repository (i.e., everything outside the `autogpt_platform` folder) are licensed under the MIT License. This includes the original stand-alone AutoGPT Agent, along with projects such as [Forge](https://github.com/Significant-Gravitas/AutoGPT/tree/master/classic/forge), [agbenchmark](https://github.com/Significant-Gravitas/AutoGPT/tree/master/classic/benchmark) and the [AutoGPT Classic GUI](https://github.com/Significant-Gravitas/AutoGPT/tree/master/classic/frontend).</br>We also publish additional work under the MIT Licence in other repositories, such as [GravitasML](https://github.com/Significant-Gravitas/gravitasml) which is developed for and used in the AutoGPT Platform. See also our MIT Licenced [Code Ability](https://github.com/Significant-Gravitas/AutoGPT-Code-Ability) project.
+AutoGPT provides an agent-based architecture and tooling well-suited for multi-step, autonomous workflows. dvoGPT adapts that architecture and hardens it for safety, privacy, and trauma-informed interaction — while adding domain-specific modules (housing, legal docket tracking, SafePaws vet coordination, VINELink monitoring, walkability and transit calculations, etc.).
 
 ---
-### Mission
-Our mission is to provide the tools, so that you can focus on what matters:
 
-- 🏗️ **Building** - Lay the foundation for something amazing.
-- 🧪 **Testing** - Fine-tune your agent to perfection.
-- 🤝 **Delegating** - Let AI work for you, and have your ideas come to life.
+## System Requirements
 
-Be part of the revolution! **AutoGPT** is here to stay, at the forefront of AI innovation.
+### Hardware
+- CPU: 4+ cores recommended  
+- RAM: Minimum 8GB (16GB recommended)  
+- Storage: ≥10GB free
 
-**📖 [Documentation](https://docs.agpt.co)**
-&ensp;|&ensp;
-**🚀 [Contributing](CONTRIBUTING.md)**
+### Software
+- Linux (Ubuntu 20.04+), macOS (10.15+), or Windows 10/11 with WSL2  
+- Docker Engine (20.10+)  
+- Docker Compose (2.0+)  
+- Git (2.30+)  
+- Node.js (16+) and npm/yarn  
+- Python 3.11+  
+- VS Code or any modern editor
+
+### Network
+- Stable internet for dev & optional integrations  
+- Outbound HTTPS access to configured APIs (Walk Score, Google Maps, VINELink, OpenAI, etc.)
 
 ---
-## 🤖 AutoGPT Classic
-> Below is information about the classic version of AutoGPT.
 
-**🛠️ [Build your own Agent - Quickstart](classic/FORGE-QUICKSTART.md)**
+## Quickstart — Local Dev (Recommended)
 
-### 🏗️ Forge
+> This repo is containerized for a reproducible dev environment. The minimal scaffold includes a React frontend, FastAPI backend, an agent worker, Postgres and Redis.
 
-**Forge your own agent!** &ndash; Forge is a ready-to-go toolkit to build your own agent application. It handles most of the boilerplate code, letting you channel all your creativity into the things that set *your* agent apart. All tutorials are located [here](https://medium.com/@aiedge/autogpt-forge-e3de53cc58ec). Components from [`forge`](/classic/forge/) can also be used individually to speed up development and reduce boilerplate in your agent project.
+**Clone & run**
+```bash
+git clone https://github.com/lockard-LLC/dvoGPT.git
+cd dvoGPT
+cp .env.example .env    # edit .env with local placeholders (DO NOT commit real keys)
+docker compose up --build -d
+# Frontend: http://localhost:3000
+# Backend health: http://localhost:8000/health
+````
 
-🚀 [**Getting Started with Forge**](https://github.com/Significant-Gravitas/AutoGPT/blob/master/classic/forge/tutorials/001_getting_started.md) &ndash;
-This guide will walk you through the process of creating your own agent and using the benchmark and user interface.
+**Quick health checks**
 
-📘 [Learn More](https://github.com/Significant-Gravitas/AutoGPT/tree/master/classic/forge) about Forge
-
-### 🎯 Benchmark
-
-**Measure your agent's performance!** The `agbenchmark` can be used with any agent that supports the agent protocol, and the integration with the project's [CLI] makes it even easier to use with AutoGPT and forge-based agents. The benchmark offers a stringent testing environment. Our framework allows for autonomous, objective performance evaluations, ensuring your agents are primed for real-world action.
-
-<!-- TODO: insert visual demonstrating the benchmark -->
-
-📦 [`agbenchmark`](https://pypi.org/project/agbenchmark/) on Pypi
-&ensp;|&ensp;
-📘 [Learn More](https://github.com/Significant-Gravitas/AutoGPT/tree/master/classic/benchmark) about the Benchmark
-
-### 💻 UI
-
-**Makes agents easy to use!** The `frontend` gives you a user-friendly interface to control and monitor your agents. It connects to agents through the [agent protocol](#-agent-protocol), ensuring compatibility with many agents from both inside and outside of our ecosystem.
-
-<!-- TODO: insert screenshot of front end -->
-
-The frontend works out-of-the-box with all agents in the repo. Just use the [CLI] to run your agent of choice!
-
-📘 [Learn More](https://github.com/Significant-Gravitas/AutoGPT/tree/master/classic/frontend) about the Frontend
-
-### ⌨️ CLI
-
-[CLI]: #-cli
-
-To make it as easy as possible to use all of the tools offered by the repository, a CLI is included at the root of the repo:
-
-```shell
-$ ./run
-Usage: cli.py [OPTIONS] COMMAND [ARGS]...
-
-Options:
-  --help  Show this message and exit.
-
-Commands:
-  agent      Commands to create, start and stop agents
-  benchmark  Commands to start the benchmark and list tests and categories
-  setup      Installs dependencies needed for your system.
+```bash
+curl -fsS http://localhost:8000/health
+curl -fsS http://localhost:3000/ | head -n 20
 ```
 
-Just clone the repo, install dependencies with `./run setup`, and you should be good to go!
+**.env variables (high level)**
+The repo contains `.env.example`. Typical variables:
 
-## 🤔 Questions? Problems? Suggestions?
+* `OPENAI_API_KEY` — LLM provider (dev/stub or restricted key)
+* `VINELINK_API_KEY` — placeholder (register and legal review required)
+* `WALK_SCORE_KEY` — Walk Score API key
+* `GOOGLE_MAPS_KEY` — Maps & Directions API key
+* `DATABASE_URL` — Postgres URL
+* `REDIS_URL` — Redis URL
 
-### Get help - [Discord 💬](https://discord.gg/autogpt)
-
-[![Join us on Discord](https://invidget.switchblade.xyz/autogpt)](https://discord.gg/autogpt)
-
-To report a bug or request a feature, create a [GitHub Issue](https://github.com/Significant-Gravitas/AutoGPT/issues/new/choose). Please ensure someone else hasn't created an issue for the same topic.
-
-## 🤝 Sister projects
-
-### 🔄 Agent Protocol
-
-To maintain a uniform standard and ensure seamless compatibility with many current and future applications, AutoGPT employs the [agent protocol](https://agentprotocol.ai/) standard by the AI Engineer Foundation. This standardizes the communication pathways from your agent to the frontend and benchmark.
+**Security reminder:** Never commit real API keys or survivor data to the repository.
 
 ---
 
-## Stars stats
+## Core features (domain-focused)
 
-<p align="center">
-<a href="https://star-history.com/#Significant-Gravitas/AutoGPT">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Significant-Gravitas/AutoGPT&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Significant-Gravitas/AutoGPT&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Significant-Gravitas/AutoGPT&type=Date" />
-  </picture>
-</a>
-</p>
+* **Stealth & Emergency Controls** — rapid-exit button, configurable decoy screens, optional duress code, ephemeral session storage and redaction of local traces.
+* **Autonomous Tasking** — multi-agent orchestration for housing search, landlord communication, lease termination letters (DVO-aware), VINELink monitoring, job search and benefits assistance, and SafePaws veterinary coordination.
+* **Housing Optimization** — walkability, grocery proximity, transit time, total cost-of-occupancy, pet-friendly filtering and DVO-related lease-break assistance.
+* **Legal Case Management** — court docket tracking, calendar reminders, evidence organization, and VINELink custody alerts.
+* **Employment & Benefits Automation** — job matching, resume/CV builder, automated SNAP/DCBS application assistance (local flows).
+* **SafePaws Integration** — appointment scheduling, encrypted pet records, discount-tier management, emergency stabilization routing.
+* **Move Coordination & Logistics** — checklists, timelines, budget planning, transport planning and volunteer/agency coordination.
+* **Trauma-Informed UX** — plain language, progressive disclosure, and built-in links to human advocates & hotlines.
 
+---
 
-## ⚡ Contributors
+## AutoGPT ancestry — what we keep from the original
 
-<a href="https://github.com/Significant-Gravitas/AutoGPT/graphs/contributors" alt="View Contributors">
-  <img src="https://contrib.rocks/image?repo=Significant-Gravitas/AutoGPT&max=1000&columns=10" alt="Contributors" />
-</a>
+dvoGPT is a purpose-driven fork of the AutoGPT ecosystem. We preserve several proven pieces from the original project model:
+
+* **Agent-based architecture** for continuous, multi-step automation.
+* **Frontend / Backend split** (React frontend, API-backed orchestration).
+* **Forge / Bench tooling concepts** for building and validating agents.
+* **CLI conveniences** for running and managing agents locally.
+
+We adapt these elements with strict privacy, auditability, and safety constraints appropriate for survivor-facing software.
+
+---
+
+## Example agents (domain examples)
+
+1. **Housing Search & Relocation Agent**
+
+   * Aggregates listings, scores them by walkability/transit, calculates cost-of-occupancy, flags pet-friendly units, drafts landlord outreach and move timelines.
+
+2. **VINELink Monitor / Court Tracker Agent**
+
+   * Tracks abuser custody status (VINELink placeholder until org registration), watches court docket updates, sends discreet alerts to the survivor or advocate, and triggers a safety plan on release.
+
+3. **SafePaws Vet Coordinator Agent**
+
+   * Schedules initial wellness checks at partner clinics, tracks vaccinations and medication schedules, and escalates emergency stabilization requests to partner hospitals.
+
+---
+
+## Frontend & Server (overview)
+
+### Frontend
+
+* React (Vite or CRA) — trauma-informed UI, rapid-exit, decoy templates.
+* Agent Builder & Interaction: low-code blocks to configure flows.
+* Monitoring & Analytics: local dev telemetry for debugging (not enabled for production without consent).
+
+### Backend
+
+* FastAPI (Python) — authentication, encrypted storage, agent orchestration endpoints.
+* Agent Worker(s) — multi-agent orchestration (LangChain or custom); workers are sandboxed and constrained for safe web access.
+* Data stores: Postgres (encrypted at rest) and Redis for queues.
+
+---
+
+## Security, Privacy & Safety (MUST READ)
+
+dvoGPT is intended for highly vulnerable people. Security and ethics are non-negotiable.
+
+* **Do not run for live survivors without legal review & partners.** Before any pilot, obtain legal counsel, sign partnership MOUs, and perform security & privacy audits.
+* **No real keys in commits.** Use `.env` and secrets managers (Vault, AWS Secrets Manager) — never commit credentials.
+* **Ephemeral sessions & minimal logging.** By default, sessions should be memory-only and server logs must redact secrets (e.g., `sk-` or `VINELINK-`).
+* **Stealth mode & rapid-exit.** The UI includes a rapid-exit control that immediately replaces the page with configurable decoy content and clears session state. Document and test this in user flows.
+* **Explicit consent for external contact.** Any communication with landlords, vets or legal agents must be explicit and auditable. Provide an option to route calls/messages through a vetted advocate.
+* **VINELink & court integrations require registration.** Do not integrate or automate against court/VINELink APIs without the required org agreements and legal review.
+* **Human-in-the-loop for high-risk actions.** For any action that could materially alter a survivor's risk (moving, alerting law enforcement), require human confirmation and advocate involvement.
+
+---
+
+## License & legal notes
+
+This project includes derived ideas and structural elements from the AutoGPT ecosystem. See `LICENSE` in this repository for our licensing terms. Parts of the original AutoGPT platform are distributed under mixed licenses (Polyform Shield for `autogpt_platform` in the upstream project and MIT for other parts). When integrating third-party components or API SDKs, respect their license and terms of service.
+
+---
+
+## Contribute & Code of Conduct
+
+We welcome contributors who understand the sensitivity of this domain.
+
+**How to contribute**
+
+1. Fork this repo and create a feature branch.
+2. Run tests and linters locally.
+3. Open a Pull Request describing the change, security/privacy impact, and migration steps. For features touching integrations (VINELink, payments, clinic scheduling), include a risk assessment and manual test plan.
+4. All PRs must include a short safety impact statement for real-world use.
+
+**Code of Conduct**
+This project works with people in crisis. Maintain trauma-informed language, respect privacy, and consider the human impact of changes.
+
+See `CONTRIBUTING.md` for details.
+
+---
+
+## Classic AutoGPT tooling & notes
+
+dvoGPT preserves compatibility with certain AutoGPT concepts:
+
+* **Forge** — tooling patterns to scaffold new agents and reduce boilerplate.
+* **Benchmark / agbenchmark** — for automated, objective testing of agent behavior.
+* **Frontend / CLI** — local UI and management CLI to run and monitor agents.
+
+If you rely on these upstream tools, consult their docs and adapt for safety constraints.
+
+---
+
+## Support & community
+
+* Repo: `https://github.com/lockard-LLC/dvoGPT.git`
+* Founder / contact: Jerry — `jerry@lockard.llc`
+* For general AutoGPT community help: Discord (AutoGPT): [https://discord.gg/autogpt](https://discord.gg/autogpt)
+
+**Security issues:** If you discover a security or privacy vulnerability, please open a private security issue or email the maintainer directly rather than posting publicly.
+
+---
+
+## Pilot checklist (before real use)
+
+1. Legal review of agreements & privacy policy.
+2. Formal partnerships with advocacy organizations and SafePaws clinics.
+3. Penetration test & privacy audit.
+4. Staff training (trauma-informed procedures).
+5. Emergency escalation workflows (hotline, local authorities, advocates).
+6. Proof of insurance / indemnification where required.
+
+---
+
+## Acknowledgements
+
+dvoGPT is inspired by the AutoGPT multi-agent ecosystem and built with a survivor-first mission. Thanks to the open-agent community and the many advocates and practitioners who advise on safety and trauma-informed design.
+
+---
+
+### Final note
+
+This project is about people — do not rush features to production without careful safety planning, legal review, and advocate involvement.
+
